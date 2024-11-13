@@ -1,0 +1,62 @@
+Algoritmo edades
+	
+	Repetir
+		Escribir "Ingrse su año de nacimiento"
+		
+		leer f
+		
+		r=2024-f
+		escribir r
+		
+		Si r>=18 y r<=55 Entonces
+			Escribir "Usuario valido"
+			Escribir "---------------------------------"
+			Escribir "Puede acceder"
+		SiNo
+			Si r>=1 y r<=17 o r>=56 y r<=99 Entonces
+				Escribir "Usuario invalido"
+			SiNo
+				Si r<1 o r>=100 Entonces
+					Escribir "Usuario incorrecto"
+				Fin Si
+			Fin Si
+		Fin Si
+		
+		Escribir "---------------------------------"
+		Escribir "Presione cualquier letra"
+		Esperar tecla
+		Borrar Pantalla
+		
+		Escribir "¿Desea poner otro año?"
+		Escribir "---------------------------------"
+		Escribir "(Escriba solo el numero de la opcion)"
+		Escribir "---------------------------------"
+		Escribir "1.Si"
+		Escribir "2.No"
+		
+		leer user
+		
+		Si user==1 Entonces
+			Escribir "Presion cualquier tecla"
+			Esperar Tecla 
+			Borrar Pantalla
+		SiNo
+			Si user==2 Entonces
+				Escribir "Gracias"
+				Escribir "Presion cualquier tecla"
+				Esperar Tecla
+				Borrar Pantalla
+			SiNo
+				Si user<1 o user>2 Entonces 
+					escribir "Opcion no valida"
+					Escribir "Presion cualquier tecla"
+					Esperar Tecla
+					Borrar Pantalla
+				Fin Si
+			Fin Si
+		Fin Si
+		
+		
+	Hasta Que user==2 o user<1 o user>2
+	
+FinAlgoritmo

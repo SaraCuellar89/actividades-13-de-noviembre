@@ -1,0 +1,76 @@
+Algoritmo clasificacion_de_tornillos
+	p=0
+	m=0
+	g=0
+	mg=0
+	gi=0
+	Repetir
+		Escribir "Ingrese el tamaño del tornillo sin el cm, por favor"
+		leer t
+		
+		Si t>=1 y t<=3 Entonces
+			Escribir "El tornillo se clasifica como pequeño"
+			p=p+1
+		SiNo
+			Si t>3 y t<5 Entonces
+				Escribir "El tornillo se clasifica como mediano"
+				m=m+1
+			SiNo
+				Si t>=5 y t<6.5 Entonces
+					Escribir "El tornillo se clasifica como grande"
+					g=g+1
+				SiNo
+					Si t>=6.5 y t<=8.5 Entonces
+						Escribir "El tornillo se clasifica como muy grande"
+						mg=mg+1
+					SiNo
+						Si t>8.5 Entonces
+							Escribir "El tornillo se clasifica como gigante"
+							gi=gi+1
+						SiNo
+							Si t<1 Entonces
+								Escribir "El tamaño ingresado no es válido"
+							Fin Si
+						Fin Si
+					Fin Si
+				Fin Si
+			Fin Si
+		Fin Si
+		
+		Esperar Tecla
+		Limpiar Pantalla
+		
+		escribir "¿Desea seguir? (escriba solo el numero de la opcion que elija)"
+		
+		escribir "1.si"
+		Escribir "2.no"
+		
+		leer user
+		
+		Si user==1 Entonces 
+			escribir "Bueno"
+		sino 
+			Si user==2 Entonces
+				Escribir "gracias"
+			sino 
+				si user>2 o user<1
+					Escribir "opcion no valida"
+				FinSi
+			Fin Si
+		Fin Si
+		
+		Esperar Tecla
+		Limpiar Pantalla
+		
+	Hasta Que user==2 o user>2 o user<1
+	
+	Escribir "Presione cualquier tecla para ver la cantidad de tornillos"
+	Esperar Tecla
+	Limpiar Pantalla
+	Escribir "Cantidad de tornillos pequeños: " p
+	Escribir "Cantidad de tornillos medianos: " m
+	Escribir "Cantidad de tornillos grandes: " g
+	Escribir "Cantidad de tornillos muy grandes: " mg
+	Escribir "Cantidad de tornillos gigantes: " gi
+	
+FinAlgoritmo
